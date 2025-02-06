@@ -11,6 +11,7 @@ struct ListView: View {
     @Binding var photos: [Photo]
     
     var body: some View {
+        
         NavigationStack{
             List {
                 ForEach($photos, id: \.id) { $photo in
